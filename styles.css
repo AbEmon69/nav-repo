@@ -3,7 +3,10 @@
     margin: 0;
 }
 .navbar {
-    background-color: bisque;
+    background-image:#B993D6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
     padding: 10px;
 }
 
@@ -17,10 +20,12 @@
 
 .nav-item {
     position: relative;
+    background-color: rgb(248, 244, 244);
+    border-radius: 4px;
     
 }
 .nav-item:hover{
-    background-color: rgb(248, 244, 244);
+    background-color: rgb(12, 1, 1);
     border-radius: 6px;
     
 }
@@ -33,14 +38,14 @@
     font-size: 20px;
 }
 .nav-item:hover a {
-   color: black;
+   color: rgb(240, 235, 235);
 }
 
 /* Dropdown styles */
 .dropdown {
     display: none;
     position: absolute;
-    background-color: white ;
+    background-color: rgb(241, 18, 174) ;
     top: 100%;
     left: 0;
     z-index: 1;
